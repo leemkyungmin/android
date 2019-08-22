@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff57"
+        android:gravity="center"
+        android:text="업체 등록하기"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:gravity="center|left"
+            android:text="업체명" />
+
+        <EditText
+            android:id="@+id/db_insert_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:gravity="center|left"
+            android:paddingRight="5dp"
+            android:text="주소" />
+
+        <EditText
+            android:id="@+id/db_insert_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="전화번호" />
+
+        <EditText
+            android:id="@+id/db_ph_first"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" - "
+            android:layout_gravity="center"
+
+            android:textSize="30dp" />
+        <EditText
+            android:id="@+id/db_ph_second"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" - "
+            android:layout_gravity="center"
+
+            android:textSize="30dp" />
+        <EditText
+            android:id="@+id/db_ph_thrid"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="이메일" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="sns" />
+
+    <EditText
+        android:id="@+id/sns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="홈페이지" />
+
+        <EditText
+            android:id="@+id/homepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="근무시간" />
+
+        <EditText
+            android:id="@+id/db_insert_worktime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="이용가능 시간" />
+
+        <EditText
+            android:id="@+id/db_insert_customusingtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="타입 및 요금" />
+
+        <EditText
+            android:id="@+id/db_insert_type_of_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ffffcc">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/location1"
+
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/location2"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/type"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이미지 불러오기"
+            android:id="@+id/img1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이미지 불러오기"
+            android:id="@+id/img2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이미지 불러오기"
+            android:id="@+id/img3"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/db_insert_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글 등록하기" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/db_insert_clear"
+        android:text="초기화"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff57"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:gravity="center|left"
+            android:text="아이디" />
+
+        <EditText
+            android:id="@+id/createid"
+            android:layout_width="200dp"
+
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 중복 "
+            android:gravity="center"
+            android:id="@+id/checkid"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:gravity="center|left"
+            android:paddingRight="5dp"
+            android:text="패스워드" />
+
+        <EditText
+            android:id="@+id/createpass"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:password="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="패스워드 확인" />
+
+    <EditText
+        android:id="@+id/checkpass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:password="true"/>
+
+        <TextView
+            android:id="@+id/check_your_password"
+            android:layout_width="97dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="이름(업체명)" />
+
+        <EditText
+            android:id="@+id/db_insert_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="20dp"
+            android:paddingRight="5dp"
+            android:text="전화번호" />
+
+        <EditText
+            android:id="@+id/firstnumber"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" - "
+            android:layout_gravity="center"
+
+            android:textSize="30dp" />
+        <EditText
+            android:id="@+id/secondnumber"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" - "
+            android:layout_gravity="center"
+
+            android:textSize="30dp" />
+        <EditText
+            android:id="@+id/thridnumber"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insertData"
+        android:text="회원가입"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="초기화"/>
+</LinearLayout>

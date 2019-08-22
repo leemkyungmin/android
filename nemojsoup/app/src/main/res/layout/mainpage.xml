@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1500"
+                android:text="ASK "
+                android:textSize="40dp"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sessionname"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그아웃"
+                android:id="@+id/sessionlogout"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/loginform"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="로그인"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대한민국  짐보관소"
+            android:textSize="40dp"
+            android:layout_weight="5"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertList"
+            android:text="글 등록 "
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="#ffffcc">
+
+        <Spinner
+            android:id="@+id/location1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            />
+
+        <Spinner
+            android:id="@+id/location2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/serach"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/search"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_weight="5"
+        android:orientation="vertical"
+        >
+
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="셀프스토리지"
+                        android:textSize="15dp" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/self"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scrollbars="vertical">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="물류창고,3PL"
+                        android:textSize="15dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/whitehouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="컨테이너 창고"
+                        android:textSize="15dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/containner"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="300dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

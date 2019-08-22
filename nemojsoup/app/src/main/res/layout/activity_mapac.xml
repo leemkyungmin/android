@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_alignParentBottom="false" />
+
+        <SlidingDrawer
+            android:id="@+id/slide"
+            android:layout_width="match_parent"
+            android:layout_height="598dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="121dp"
+            android:allowSingleTap="true"
+            android:animateOnClick="true"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="vertical"
+            android:topOffset="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="끌어올려 업체 보기"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/handle"
+                android:textSize="20dp"/>
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/map"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/itemlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:layout_gravity="bottom"
+                    android:background="#ffffff">
+
+                </ListView>
+            </LinearLayout>
+        </SlidingDrawer>
+
+        <Button
+            android:id="@+id/gpsButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/locationgps" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#ffffff" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

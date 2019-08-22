@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="업체명"
+            android:textSize="13dp"
+            android:background="@drawable/retangle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="업체명"
+            android:textSize="13dp"
+            android:id="@+id/group_name"
+            android:gravity="center"
+            android:background="@drawable/retangle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="13dp"
+        >
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="주 소"
+            android:textSize="13dp"
+            android:background="@drawable/retangle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주 소"
+            android:textSize="13dp"
+            android:onClick="postion"
+            android:id="@+id/address"
+            android:gravity="center"
+            android:background="@drawable/retangle"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="이메일 "
+                android:textSize="13dp"
+                android:background="@drawable/retangle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이메일"
+                android:textSize="13dp"
+                android:id="@+id/email"
+                android:gravity="center"
+                android:background="@drawable/retangle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="기타메신저"
+                android:textSize="13dp"
+                android:background="@drawable/retangle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="카카오톡 플러스친구"
+                android:textSize="13dp"
+                android:id="@+id/sns"
+                android:gravity="center"
+                android:background="@drawable/retangle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="홈페이지"
+                android:textSize="13dp"
+                android:background="@drawable/retangle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="홈페이지"
+                android:textSize="13dp"
+                android:onClick="postion"
+                android:id="@+id/homepage"
+                android:gravity="center"
+                android:background="@drawable/retangle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="사용 가능 시간"
+                android:textSize="13dp"
+                android:background="@drawable/retangle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용 가능 시간"
+                android:textSize="13dp"
+                android:id="@+id/using_time"
+                android:gravity="center"
+                android:background="@drawable/retangle"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:text="타입 및 요금"
+            android:textSize="13dp"
+            android:background="@drawable/retangle"/>
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/typeOfprice"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:lines="15"
+            android:text="타입 및 요금"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:background="@drawable/retangle"/>
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화하기"
+            android:id="@+id/phcall"/>
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/img_3"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
